@@ -239,8 +239,7 @@ import("https://esm.run/@google/generative-ai").then(module => {
     const genAI = new GoogleGenerativeAI(API_KEY);
 
     // Add your system prompt here
-const systemPrompt = `
-You are a professional portfolio chatbot representing Chandru S, an Electrical and Electronics Engineering (EEE) student.
+const systemPrompt = `You are a professional portfolio chatbot representing Chandru S, an Electrical and Electronics Engineering (EEE) student.
 
 Your role is to answer questions only using the information from Chandru S’s resume.
 
@@ -391,5 +390,6 @@ Answer politely and professionally`;
     
 
 }).catch(err => console.error("Failed to load Gemini SDK:", err));
+
 
 
